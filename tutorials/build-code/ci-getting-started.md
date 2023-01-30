@@ -129,22 +129,7 @@ import TabItem from '@theme/TabItem';
 5. When you are prompted to select a repository, select the repository that you forked in the earlier step, and then select **Configure Pipeline**.
 6. Select **Starter Pipeline**, and then select **Create Pipeline**.
 7. Switch from the **Visual** view to the **YAML** view, and then select **Edit YAML**.
-8. Replace the sample step section with the following and **Save** the pipeline.
 
-```
-              - step:
-                  type: Run
-                  name: Build JavaScript App
-                  identifier: Build_JavaScript_App
-                  spec:
-                    shell: Sh
-                    command: |-
-                      echo "Welcome to Harness CI"
-                      node --version
-                      npm install
-                      npm run build --if-present
-                      npm test
-```
 
 ```mdx-code-block
 </TabItem>
